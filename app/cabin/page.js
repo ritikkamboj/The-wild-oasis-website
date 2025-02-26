@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigation from '../component/Navigation'
 import { list } from 'postcss';
+import Counter from '../component/Counter';
 
 async function page() {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -14,6 +15,7 @@ async function page() {
             <ul>
                 {data.map(item => <li key={item.id}>{item.name}</li>)}
             </ul>
+            <Counter data={data} />
         </div>
     )
 }
