@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Navigation from "./component/Navigation";
+import Navigation from "./_component/Navigation";
 
 export default function Home() {
   return (
