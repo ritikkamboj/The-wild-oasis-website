@@ -1,6 +1,11 @@
 import React from 'react'
 import Counter from '@/app/_component/Counter';
 
+export const metadata = {
+    title: "Cabin"
+}
+
+
 function page() {
 
 
