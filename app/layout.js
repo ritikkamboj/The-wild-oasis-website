@@ -2,6 +2,15 @@ import Logo from "@/app/_component/Logo"
 import Navigation from "@/app/_component/Navigation"
 import "@/app/_styles/globals.css";
 
+import { Josefin_Sans } from 'next/font/google';
+
+const josefin = Josefin_Sans({
+  subsets: ['latin'],
+  display: 'swap'
+})
+
+console.log(josefin);
+
 
 
 
@@ -19,7 +28,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <body className="bg-primary-950 text-primary-100 min-h-screen">
+      {/* <body className=`${josefin.className} bg-primary-950 text-primary-100 min-h-screen`> */}
+      <body className={`${josefin.className} bg-primary-950 text-primary-100 min-h-screen`}>
         <header>
           <Logo />
 
@@ -30,6 +40,6 @@ export default function RootLayout({ children }) {
         <footer>CopyRight @ The wild Oasis </footer>
       </body>
 
-    </html>
+    </html >
   )
 }
