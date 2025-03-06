@@ -1,6 +1,8 @@
+import SideNavigation from "@/app/_component/SideNavigation";
+
 export default function Layout({ children }) {
     return <div className="grid grid-cols-[16rem_1fr] h-full gap-12">
-        <div>Navigation </div>
+        <SideNavigation />
         <div>{children}</div>
     </div>
 }
